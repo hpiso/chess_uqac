@@ -20,7 +20,7 @@ public class HumanPlayer extends Player {
 		if(playGround.getGrid()[mv.xI][mv.yI].getPiece().getPlayer() == this.getColor())
 			return false;
 		if(!playGround.getGrid()[mv.xI][mv.yI].getPiece().isMoveLegal(mv))
-			return false;		
+			return false;
 		playGround.movePiece(mv);
 			return true;
 	}
@@ -40,7 +40,7 @@ public class HumanPlayer extends Player {
 			finalY = Lire();
 			ViderBuffer();
 
-			mv = new Move(initialX-'a', initialY-'1', finalX - 'a', 	finalY-'1');
+			mv = new Move(initialX-'a', initialY-'1', finalX - 'a', finalY-'1');
 		}
 		while(!makeMove(mv));
 		return mv;
