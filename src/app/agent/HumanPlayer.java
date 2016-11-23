@@ -40,7 +40,7 @@ public class HumanPlayer extends Player {
 			finalY = Lire();
 			ViderBuffer();
 
-			mv = new Move(initialX-'a', initialY-'1', finalX - 'a', 	finalY-'1');
+			mv = new Move(initialX-'a', initialY-'1', finalX - 'a', finalY-'1');
 		}
 		while(!makeMove(mv));
 		return mv;
