@@ -70,4 +70,6 @@ public class HumanPlayer extends Player {
 		} catch (java.io.IOException e) {
 		}
 	}
+
+
 }

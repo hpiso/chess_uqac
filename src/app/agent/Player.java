@@ -19,4 +19,12 @@ public abstract class Player {
 	public void setColor(int arg){
 		this.Colour = arg;
 	}
+
+	public Board getPlayGround() {
+		return playGround;
+	}
+
+	public void setPlayGround(Board playGround) {
+		this.playGround = playGround;
+	}
 }
